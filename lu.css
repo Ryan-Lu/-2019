@@ -76,7 +76,7 @@ ol,ul{
 }
 
 .topNavBar nav > ul > li > a:hover {
-    border-bottom: 3px solid #e6686a;
+    border-bottom: 3px solid #16a085;
 }
 
 
@@ -89,7 +89,7 @@ ol,ul{
 
 .topNavBar .logo .rs {
     margin-right: 4px;
-    color: #e6686a;
+    color: #16a085;
 }
 
 .topNavBar .logo .card {
@@ -106,7 +106,7 @@ ol,ul{
 
 .banner .mask {
     height: 515px;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .userCard {
@@ -119,7 +119,7 @@ ol,ul{
 }
 
 .userCard .welcome {
-    background: #e6686a;
+    background: #16a085;
     color: white;
     display: inline-block;
     padding: 1px 10px;
@@ -139,7 +139,7 @@ ol,ul{
     display: block;
     border: 10px solid transparent;
     width: 0;
-    border-left-color: #e6686a;
+    border-left-color: #16a085;
     border-top-width: 0;
     position: absolute;
     left: 4px;
@@ -192,7 +192,7 @@ ol,ul{
 }
 
 .userCard > footer.media {
-    background: #e6686a;
+    background: #16a085;
     text-align: center;
 }
 
@@ -206,7 +206,7 @@ ol,ul{
 }
 
 .userCard > footer.media > a:hover {
-background: #cf5d5f;
+background: #128870;
 }
 
 .userCard svg {
@@ -222,9 +222,9 @@ body > main {
 }
 
 body > main .downloadResume {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 16px;
-    padding: 21px 55px;
+    padding: 20px 50px;
     display: inline-block;
     border: 1px solid #b7b7b7;
     background: #efefef;
@@ -243,14 +243,6 @@ body > main .downloadResume-wrapper {
     text-align: center;
 }
 
-body > main .selfIntroduction {
-    max-width: 940px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    color: #3d4451;
-    line-height: 2;
-}
 
 section.skills,
 section.portfolio {
@@ -300,14 +292,14 @@ section.skills > ol > li:nth-child(even) {
 
 section.skills .progressBar {
     height: 5px;
-    background: #ecd1d1;
+    background: #92c0df;
     border-radius: 2px;
     margin: 4px 0 40px;
 }
 
 section.skills .progressBar .progress {
     height: 100%;
-    background: #e6686a;
+    background: #16a085;
     width: 70%;
     border-radius: 2px;
 }
@@ -352,7 +344,7 @@ section.portfolio > nav .bar {
 
 section.portfolio > nav .bar-inner {
     height: 100%;
-    background: #e6686a;
+    background: #16a085 ;
     border-radius: 2px;
     transition: all 0.3s;
 }
