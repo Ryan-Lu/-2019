@@ -46,6 +46,33 @@ ol,ul{
     top: 0px;
     left: 0px;
     width: 100%;
+    transition: all 0.5s;
+    color: #b7b7b7;
+}
+
+.topNavBar.sticky{
+    background: white;
+    padding: 10px 0;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    color: #3d4451;
+}
+
+.topNavBar nav > ul > li.highlight > a::after,
+.topNavBar nav > ul > li.active > a::after {
+content: '';
+display: block;
+position: absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background: #e06567;
+height: 3px;
+animation: menuSlide .5s;
+}
+@keyframes menuSlide{
+0%{ width: 0; }
+100%{ width: 100%; }
 }
 
 .topNavBar-inner {
@@ -348,6 +375,7 @@ section.portfolio > h2 {
 .swiper_txt p {
     line-height: 20px;
     letter-spacing: 0.5px;
+}
 
 /* section.portfolio > nav {
     text-align: center;

@@ -8,24 +8,17 @@
         <script src="//at.alicdn.com/t/font_1254408_dnvzst0locu.js"></script>
     </head>
     <body>
-        <div class="topNavBar">
+        <div class="topNavBar" id="topNavBar">
             <div class="topNavBar-inner clearfix">
                 <a href="#" alt="logo" class="logo" style="float: left;">
-                        <span class="rs">L</span>
-                        <span class="card">KF</span>
+                    <span class="rs">L</span>
+                    <span class="card">KF</span>
                 </a>
                 <nav class="menu" style="float: right;">
                     <ul class="clearfix">
                         <li><a href="#siteAbout">关于</a></li>
                         <li><a href="#siteSkills">技能</a></li>
-                        <li>
-                            <a href="#siteWorks">作品</a>
-                            <ul class="submenu">
-                                <li>作品一</li>
-                                <li>作品二</li>
-                                <li>作品三</li>
-                            </ul>
-                        </li>
+                        <li><a href="#siteWorks">作品</a></li>
                         <li><a href="#">联系方式</a></li>
                         <li><a href="#">其他</a></li>
                     </ul>
@@ -80,7 +73,7 @@
                     <div class="progressBar">
                         <div class="progress" style="width: 85%"></div>
                         <p>
-                        能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术.
+                            能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术。
                         </p>
                     </div>
                 </li>
@@ -88,35 +81,50 @@
                     <h3>JavaScript</h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 80%"></div>
+                        <p>
+                            熟悉 es6 语法。
+                        </p>
                     </div>
                 </li>
                 <li>
                     <h3>jQuery</h3>
                     <div class="progressBar">
-                        <div class="progress" style="width: 65%"></div>
+                        <div class="progress" style="width: 70%"></div>
+                        <p>
+                            熟悉 jQuery 的常用 API，能使用 jQuery 制作网站、轮播、Tab 组件等。
+                        </p>
                     </div>
                 </li>
                 <li>
                     <h3>Vue</h3>
                     <div class="progressBar">
-                        <div class="progress" style="width: 75%"></div>
+                        <div class="progress" style="width: 80%"></div>
+                        <p>
+                            熟悉 Vue 常用功能，如组件、Vue-Router、双向绑定等。
+                        </p>
                     </div>
                 </li>
                 <li>
-                    <h3>React</h3>
+                    <h3>Node.js</h3>
                     <div class="progressBar">
-                        <div class="progress" style="width: 60%"></div>
+                        <div class="progress" style="width: 65%"></div>
+                        <p>
+                            熟悉 Node.js 。
+                        </p>
                     </div>
                 </li>
                 <li>
                     <h3>HTTP</h3>
                     <div class="progressBar">
                         <div class="progress" style="width: 75%"></div>
+                        <p>
+                            掌握 HTTP 的基本知识 了解常用响应状态码。
+                        </p>
                     </div> 
                 </li>
             </ol>
         </section>
-        <section class="portfolio">
+        <section class="portfolio" data-x id="siteWorks">
             <h2>作品集</h2>
             <!-- <nav>
                 <ol class="clearfix">
@@ -212,10 +220,12 @@
                 
             </div>
         </section>
-        <script src="./js/swiper.js"></script>
         <!-- 轮播图 -->
         <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
         <!-- 补间动画 -->
         <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
+        <script src="./js/swiper.js"></script>
+        <script src="./js/topbar.js"></script>
+        <script src="./js/navigation.js"></script>
     </body>
 </html>
