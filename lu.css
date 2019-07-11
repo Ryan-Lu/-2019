@@ -33,6 +33,13 @@ ol,ul{
     clear:both;
 }
 
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+
 .topNavBar {
     padding: 20px 0;
     position: fixed;
@@ -98,7 +105,7 @@ ol,ul{
 
 .banner {
     height: 515px;
-    background-image: url(./rs-cover.jpg);
+    background-image: url(./img/rs-cover.jpg);
     background-position: center center;
     /* 背景图片自适应屏幕尺寸 */
     background-size: cover;
@@ -297,11 +304,17 @@ section.skills .progressBar {
     margin: 4px 0 40px;
 }
 
-section.skills .progressBar .progress {
+section.skills .progressBar > .progress {
     height: 100%;
     background: #16a085;
     width: 70%;
     border-radius: 2px;
+}
+
+section.skills .progressBar > p {
+    font-size: 12px;
+    color: #3d4451;
+    padding: 4px;
 }
 
 section.portfolio {
@@ -309,7 +322,34 @@ section.portfolio {
     margin-bottom: 100px;
 }
 
-section.portfolio > nav {
+section.portfolio > h2 {
+    padding-bottom: 30px;
+}
+
+.swiper-button-next {
+    color: #fff;
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.swiper_txt {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+    bottom: 20px;
+    position: absolute;
+    text-align: left;
+    padding-left: 20px;
+    color: #3d4451;
+}
+
+.swiper_txt p {
+    line-height: 20px;
+    letter-spacing: 0.5px;
+
+/* section.portfolio > nav {
     text-align: center;
     display: inline-block;
     vertical-align: top;
@@ -318,7 +358,7 @@ section.portfolio > nav {
 
 section.portfolio > nav > ol {
     margin: 0 auto;
-    /* 一般下面两个要同时设置 */
+    一般下面两个要同时设置
     display: inline-block;
     vertical-align: top;
 }
@@ -371,4 +411,4 @@ section.portfolio .works {
 section.portfolio .works > .big,
 section.portfolio .works > .small {
     position: absolute;
-}
+} */

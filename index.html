@@ -4,42 +4,42 @@
         <meta charset="UTF-8">
         <title>陆康锋的个人简历</title>
         <link rel="stylesheet" href="./lu.css">
+        <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
         <script src="//at.alicdn.com/t/font_1254408_dnvzst0locu.js"></script>
-        <style type="text/css">
-            .icon {
-               width: 1em; height: 1em;
-               vertical-align: -0.15em;
-               fill: currentColor;
-               overflow: hidden;
-            }
-        </style>
     </head>
     <body>
         <div class="topNavBar">
             <div class="topNavBar-inner clearfix">
-                    <a href="#" alt="logo" class="logo" style="float: left;">
-                            <span class="rs">L</span>
-                            <span class="card">KF</span>
-                    </a>
-                    <nav style="float: right;">
-                        <ul class="clearfix">
-                            <li><a href="#">关于</a></li>
-                            <li><a href="#">技能</a></li>
-                            <li><a href="#">作品</a></li>
-                            <li><a href="#">联系方式</a></li>
-                            <li><a href="#">其他</a></li>
-                        </ul>
-                    </nav>
+                <a href="#" alt="logo" class="logo" style="float: left;">
+                        <span class="rs">L</span>
+                        <span class="card">KF</span>
+                </a>
+                <nav class="menu" style="float: right;">
+                    <ul class="clearfix">
+                        <li><a href="#siteAbout">关于</a></li>
+                        <li><a href="#siteSkills">技能</a></li>
+                        <li>
+                            <a href="#siteWorks">作品</a>
+                            <ul class="submenu">
+                                <li>作品一</li>
+                                <li>作品二</li>
+                                <li>作品三</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">联系方式</a></li>
+                        <li><a href="#">其他</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <div class="banner">
             <div class="mask"></div>
         </div>
         <main>
-            <div class="userCard">
+            <div data-x id="siteAbout" class="userCard">
                 <div class="pictureAndText clearfix">
                     <div class="picture">
-                        <img src="./avatar.jpg" width="299" height="347" alt="头像">
+                        <img src="./img/avatar.jpg" width="299" height="347" alt="头像">
                     </div>
                     <div class="text">
                             <span class="welcome">hi
@@ -61,29 +61,9 @@
                     </div>
                 </div>
                 <footer class="media">
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weixin"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-weibo"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-twitter"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
+                    <a href="#https://github.com/Ryan-Lu">
                         <svg class="icon" aria-hidden="true">
                             <use xlink:href="#icon-github"></use>
-                        </svg>
-                    </a>
-                    <a href="#">
-                        <svg class="icon" aria-hidden="true">
-                            <use xlink:href="#icon-instagram"></use>
                         </svg>
                     </a>
                 </footer>
@@ -92,51 +72,53 @@
                 <a class="downloadResume" href="./陆康锋-简历2019.pdf" target="blank" download>下载 PDF 简历</a>
             </p>
         </main>
-        <section class="skills">
+        <section data-x id="siteSkills" class="skills">
             <h2>技能</h2>
             <ol class="clearfix">
                 <li>
                     <h3>HTML 5 &amp; CSS 3</h3>
-                    <div>
+                    <div class="progressBar">
+                        <div class="progress" style="width: 85%"></div>
+                        <p>
                         能独立制作精美网页，掌握 CSS 3 动画、过渡效果、响应式等常用技术.
-
+                        </p>
                     </div>
                 </li>
                 <li>
                     <h3>JavaScript</h3>
                     <div class="progressBar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 80%"></div>
                     </div>
                 </li>
                 <li>
                     <h3>jQuery</h3>
                     <div class="progressBar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 65%"></div>
                     </div>
                 </li>
                 <li>
                     <h3>Vue</h3>
                     <div class="progressBar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 75%"></div>
                     </div>
                 </li>
                 <li>
                     <h3>React</h3>
                     <div class="progressBar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 60%"></div>
                     </div>
                 </li>
                 <li>
                     <h3>HTTP</h3>
                     <div class="progressBar">
-                        <div class="progress"></div>
+                        <div class="progress" style="width: 75%"></div>
                     </div> 
                 </li>
             </ol>
         </section>
         <section class="portfolio">
             <h2>作品集</h2>
-            <nav>
+            <!-- <nav>
                 <ol class="clearfix">
                 <li id="portfolio1">所有</li>
                 <li id="portfolio2">框架</li>
@@ -159,15 +141,81 @@
             </script>
             <div class="works" style="height: 597px;">
                 <div class="big" style="top: 0;left: 0;">
-                    <img src="./1.jpg" alt="作品1">
+                    <img src="./img/1.jpg" alt="作品1">
                 </div>
                 <div class="small" style="top: 0;left: 645px;">
-                    <img src="./2.jpg" alt="作品2">
+                    <img src="./img/2.jpg" alt="作品2">
                 </div>
                 <div class="small" style="top: 312px;left: 645px;">
-                    <img src="./3.jpg" alt="作品3">
+                    <img src="./img/3.jpg" alt="作品3">
                 </div>
+            </div> -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/kbn.png" class="swiper-slide">
+                        <div class="swiper_txt">
+                            <h3>键盘导航栏</h3>
+                            <p>
+                                把自己常用的网址添加在字母上，
+                                <br>
+                                添加完成后，只需要在键盘上点击字母，
+                                <br>
+                                即可跳转到相应的网页。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/ht.png" class="swiper-slide">
+                        <div class="swiper_txt">
+                            <h3>复刻喜茶官网</h3>
+                            <p>
+                                平时挺喜欢喝喜茶，
+                                <br>
+                                刚好看到喜茶的官网又简单又好看，
+                                <br>
+                                所以就自己尝试着做了一下。
+                            </p>
+                        </div>                      
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/hb.png" class="swiper-slide">  
+                        <div class="swiper_txt">
+                            <h3>Canvas 画板</h3>   
+                            <p>
+                                用 HTML 5 Canvas 做了一个简单的小画板，
+                                <br>
+                                画笔可以选择粗细和颜色
+                                <br>
+                                有橡皮擦和一键清除以及下载保存的功能。
+                            </p>  
+                        </div>                                         
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/todo.png" class="swiper-slide">
+                        <div class="swiper_txt">
+                            <h3>Todo小程序</h3>
+                            <p>
+                                刚开始学习计算机语言的时候写的
+                                <br>
+                                一个待办事项小程序。
+                            </p>
+                        </div>                        
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- 如果需要导航按钮 -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
             </div>
         </section>
+        <script src="./js/swiper.js"></script>
+        <!-- 轮播图 -->
+        <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+        <!-- 补间动画 -->
+        <script src="https://cdn.bootcss.com/tween.js/r14/Tween.min.js"></script>
     </body>
 </html>
