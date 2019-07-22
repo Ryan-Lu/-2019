@@ -132,7 +132,7 @@ animation: menuSlide .5s;
 
 .banner {
     height: 515px;
-    background-image: url(./img/rs-cover.jpg);
+    background-image: url(https://cdn.nlark.com/yuque/0/2019/jpeg/416562/1563767867618-0d9ee441-eb27-4ef6-a755-a922f841ace1.jpeg);
     background-position: center center;
     /* 背景图片自适应屏幕尺寸 */
     background-size: cover;
